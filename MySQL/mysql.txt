@@ -1,0 +1,6 @@
+CREATE TABLE `sensordata` (
+  `idx` int(11) DEFAULT NULL,
+  `temperature` float DEFAULT NULL,
+  `humidity` float DEFAULT NULL,
+  `timestamp` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

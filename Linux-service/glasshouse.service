@@ -1,0 +1,11 @@
+[Unit]
+Description=Glasshouse Monitoring Service
+After=multi-user.target
+<br>[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/usr/bin/python3 /root/scripts/glasshouse/glasshouse.py
+
+[Install]
+WantedBy=multi-user.target
